@@ -1,0 +1,54 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <div class="list">
+
+        <div class="item item-icon-left ">
+          <i class="icon ion-email"></i>
+          <a href="mailto:ladouane@example.com" class="button button-positive butDouane"> Send email</a>
+        </div>
+
+
+        <div class="item item-icon-left item-icon-right">
+        <i class="icon ion-social-facebook"></i>
+         <button class="button button-positive butDouane" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eating at La Douane Bistrot', null /* img */, null /* url */, 'Paste it dude!', function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">Share via Facebook</button>
+     
+       <!-- <a ng-click="facebook()"  class="button button-positive butDouane"> Login in to Facebook</a>-->
+        <!--<a href="https://www.facebook.com"  class="button button-positive butDouane"> Login in to Facebook</a> -->
+
+        </div>
+        
+      <div class="item item-icon-left item-icon-right">
+        <i class="icon ion-social-twitter"></i>
+
+        <button class="button button-positive butDouane" onclick="window.plugins.socialsharing.shareVia('com.apple.social.twitter', 'Eating at La Douane Bistrot', null, null, 'http://www.x-services.nl', function(){console.log('share ok')}, function(msg) {alert('error: ' + msg)})">Message via Twitter</button>
+
+      </div>
+
+        <div class="item item-icon-left item-icon-right whatsapp" >
+         <i class="icon"></i>
+         <button class="button button-positive butDouane" onclick="window.plugins.socialsharing.canShareVia('whatsapp', 'Eating at La Douane Bistrot', null, null, null, function(e){alert(e)}, function(e){alert(e)})">WhatsApp</button>
+
+        </div>
+
+        <div class="item item-icon-left">
+         <i class="icon ion-ios-location" ></i>
+           <a href="map.html" class="button button-positive butDouane"> Map</a>
+           
+           
+            
+        </div>
+
+        
+        <div class="item item-icon-left item-icon-right" >
+          
+          <a href="tel:+55-81-3224-5799" class="button button-positive callDouane">Call La Douane <i class="icon ion-ios-telephone-outline"></i> </a>
+          
+        </div>
+
+      </div>
+    </ion-list>
+  </ion-content>
+
+
+</ion-view>

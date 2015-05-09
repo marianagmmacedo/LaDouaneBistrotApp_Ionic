@@ -1,0 +1,28 @@
+<ion-view view-title="La douane">
+  <ion-content class="has-header padding" ng-controller="MediaCtrl"><br><br>
+    <div class="item item-divider">
+      <i class="ion-images"></i>  La Douane 
+    </div>
+
+    <a class="item item-list-detail">
+      <ion-scroll direction="x">
+        <img ng-repeat="image in ambienteImages" ng-src="{{image.src}}" ng-click="showImages1($index)" class="image-list-thumb"/>
+      </ion-scroll>
+    </a>
+    <br><br>
+    <div class="item item-divider">
+      <i class="ion-images"></i> Menu Photos
+    
+    </div>
+
+    <a class="item item-list-detail">
+      <ion-scroll direction="x">
+        <img ng-repeat="image in pratosImages" ng-src="{{image.src}}" ng-click="showImages2($index)" class="image-list-thumb"/>
+      </ion-scroll>
+    </a>
+    <br><br>
+    
+
+
+  </ion-content>  
+</ion-view>

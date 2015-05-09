@@ -1,0 +1,12 @@
+{
+  "name": "ladouane",
+  "app_id": "56a42101",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

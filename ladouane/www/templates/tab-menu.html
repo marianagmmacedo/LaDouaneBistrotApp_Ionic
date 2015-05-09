@@ -1,0 +1,928 @@
+<ion-view view-title="Menu">
+<!-- AccountCtrl -->
+  <ion-content>
+	<form action="MAILTO:ladouane@example.com" method="post" enctype="text/plain">
+	 <div class="list">
+
+	 	<!-- EXTRA MENU -->
+	 	<div class="item item-divider">
+	   	{{ "extracardapio" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select" ng-click="showDetailPage()">
+		    <div class="input-label">
+		      {{ "extracardapio1" | translate }}
+		    </div>
+		    <select name="extracardapio1" >
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+
+	  	<!-- COUVERT -->
+	  	<div class="item item-divider">
+	   	{{ "couvert" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select" ng-click="showAlert()">
+		    <div class="input-label">
+		      {{ "couvert1" | translate }}
+		      
+		    </div>
+		    <select name="couvert1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "couvert2" | translate }}
+		    </div>
+		    <select name="couvert2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+	  	<!-- TAPAS -->
+	  	<div class="item item-divider">
+	   	{{ "appetizer" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a1" | translate }}
+		    </div>
+		    <select name="a1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a2" | translate }}
+		    </div>
+		    <select name="a2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a3" | translate }}
+		    </div>
+		    <select name="a3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a4" | translate }}
+		    </div>
+		    <select name="a4">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a5" | translate }}
+		    </div>
+		    <select name="a5">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a6" | translate }}
+		    </div>
+		    <select name="a6">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a7" | translate }}
+		    </div>
+		    <select name="a7">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "a8" | translate }}
+		    </div>
+		    <select name="a8">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+	 	<!-- SALAD -->
+	  	<div class="item item-divider">
+	   	{{ "Saladas" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "s1" | translate }}
+		      <!--<button class="button button-positive" ng-click="showAlert()">+</button>-->
+		    </div>
+		    <select name="s1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "s2" | translate }}
+		    </div>
+		    <select name="s2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "s3" | translate }}
+		    </div>
+		    <select name="s3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "s4" | translate }}
+		    </div>
+		    <select name="s4"> 
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<!-- SPECIALITIES -->
+	  	<div class="item item-divider">
+	   	{{ "specialities" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp1" | translate }}
+		      <!--<button class="button button-positive" ng-click="showAlert()">+</button>-->
+		    </div>
+		    <select name="sp1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp2" | translate }}
+		    </div>
+		    <select name="sp2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp3" | translate }}
+		    </div>
+		    <select name="sp3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp4" | translate }}
+		    </div>
+		    <select name="sp4">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp5" | translate }}
+		    </div>
+		    <select name="sp5">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp6" | translate }}
+		    </div>
+		    <select name="sp6">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp7" | translate }}
+		    </div>
+		    <select name="sp7">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp8" | translate }}
+		    </div>
+		    <select name="sp8">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp9" | translate }}
+		    </div>
+		    <select name="sp9">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp10" | translate }}
+		    </div>
+		    <select name="sp10">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp11" | translate }}
+		    </div>
+		    <select name="sp11">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp12" | translate }}
+		    </div>
+		    <select name="sp12">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp13" | translate }}
+		    </div>
+		    <select name="sp13">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp14" | translate }}
+		    </div>
+		    <select name="sp14">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp15" | translate }}
+		    </div>
+		    <select name="sp15">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp16" | translate }}
+		    </div>
+		    <select name="sp16">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp17" | translate }}
+		    </div>
+		    <select name="sp17">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp18" | translate }}
+		    </div>
+		    <select name="sp18">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp19" | translate }}
+		    </div>
+		    <select name="sp19">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp20" | translate }}
+		    </div>
+		    <select name="sp20">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp21" | translate }}
+		    </div>
+		    <select name="sp21">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp22" | translate }}
+		    </div>
+		    <select name="sp22">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "sp23" | translate }}
+		    </div>
+		    <select name="sp23">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	
+	  	<!-- SANDWICHES -->
+	  	<div class="item item-divider">
+	   	{{ "sandwich" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "san1" | translate }}
+		      <!--<button class="button button-positive" ng-click="showAlert()">+</button>-->
+		    </div>
+		    <select name="san1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "san2" | translate }}
+		    </div>
+		    <select name="san2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "san3" | translate }}
+		    </div>
+		    <select name="san3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "san4" | translate }}
+		    </div>
+		    <select name="san4">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	    <!-- PASTA -->
+	  	<div class="item item-divider">
+	   	{{ "pasta" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "pasta1" | translate }}
+		      <!--<button class="button button-positive" ng-click="showAlert()">+</button>-->
+		    </div>
+		    <select name="pasta1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "pasta2" | translate }}
+		    </div>
+		    <select name="pasta2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "pasta3" | translate }}
+		    </div>
+		    <select name="pasta3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<!-- DESSERT -->
+	  	<div class="item item-divider">
+	   	{{ "dessert" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d1" | translate }}
+		      <!--<button class="button button-positive" ng-click="showAlert()">+</button>-->
+		    </div>
+		    <select name="d1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d2" | translate }}
+		    </div>
+		    <select name="d2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d3" | translate }}
+		    </div>
+		    <select name="d3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d4" | translate }}
+		    </div>
+		    <select name="d4">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d5" | translate }}
+		    </div>
+		    <select name="d5">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d6" | translate }}
+		    </div>
+		    <select name="d6">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d7" | translate }}
+		    </div>
+		    <select name="d7">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "d8" | translate }}
+		    </div>
+		    <select name="d8">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<!-- DRINKS -->
+	  	<div class="item item-divider">
+	   	{{ "drinks" | translate }}
+	   	
+		</div>	
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr1" | translate }}
+		      <!--<button class="button button-positive" ng-click="showAlert()">+</button>-->
+		    </div>
+		    <select name="dr1">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr2" | translate }}
+		    </div>
+		    <select name="dr2">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr3" | translate }}
+		    </div>
+		    <select name="dr3">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr4" | translate }}
+		    </div>
+		    <select name="dr4">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr5" | translate }}
+		    </div>
+		    <select name="dr5">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr6" | translate }}
+		    </div>
+		    <select name="dr6">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr7" | translate }}
+		    </div>
+		    <select name="dr7">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr8" | translate }}
+		    </div>
+		    <select name="dr8">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr9" | translate }}
+		    </div>
+		    <select name="dr9">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr10" | translate }}
+		    </div>
+		    <select name="dr10">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr11" | translate }}
+		    </div>
+		    <select name="dr11">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+	  	<label class="item item-input item-select">
+		    <div class="input-label">
+		      {{ "dr12" | translate }}
+		    </div>
+		    <select name="dr12">
+		      <option selected>0</option>
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+	  	</label>
+
+	  	<input class="button button-positive menuForm" type="submit" value="Send">
+		<input class="button button-positive menuForm" type="reset" value="Reset">
+	</form>
+
+	</div> 
+  </ion-content>
+</ion-view>
